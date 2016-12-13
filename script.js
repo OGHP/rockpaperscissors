@@ -11,6 +11,9 @@ var playerChoice;
 var computerChoice;
 var winner;
 
+// var playerScore = 0;
+// var computerScore = 0;
+
 var getRandomInt = function(min,max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -26,24 +29,30 @@ var checkWinner = function () {
   if(playerChoice === 'rock'){
     if(computerChoice === 'scissors'){
       winner = 'Player';
+      // playerScore +=1;  
     } else if (computerChoice === 'paper') {
       winner = 'Computer';
+      // computerScore +=1;
     } else {
       winner = 'No';
     }
   } else if(playerChoice === 'paper'){
     if(computerChoice === 'rock') {
       winner = 'Player';
+      // playerScore +=1;
     } else if (computerChoice === 'scissors') {
       winner = 'Computer';
+      // computerScore +=1;
     } else {
       winner = 'No';
     }
   } else if(playerChoice === 'scissors') {
     if(computerChoice === 'paper') {
       winner = 'Player';
+      // playerScore +=1;
     } else if(computerChoice === 'rock') {
       winner = 'Computer';
+      // computerScore +=1;
     } else {
       winner = 'No';
     }
@@ -51,7 +60,9 @@ var checkWinner = function () {
   displayWinner();
 }
 
-// var compare = function() {}
+
+// document.write("<p>Your Score: " + playerScore);
+// document.write("<p>Computer Score: " + computerScore);
 
 
 var generateComputerChoice = function () {
