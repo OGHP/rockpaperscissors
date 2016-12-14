@@ -11,7 +11,7 @@ h1 {
 h2 {
   text-align: center;
   color: darkblue;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h3 {
@@ -19,14 +19,15 @@ h3 {
   font-weight: bolder;
   color: red;
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 div {
-  float:left;
+  /*float:left;*/
   width: 100%;
   margin-top: 20px;
-  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 
 #rock {
@@ -35,7 +36,7 @@ div {
   height: 170px;  
   width: 160px;
   border: none;
-  margin-left: 38%;
+  margin-left: 30px;
   background-repeat: no-repeat;
 }
 
@@ -60,7 +61,7 @@ div {
   background-color: white;
 }
 
-div.clearfix {
+/*div.clearfix {
   clear: both;
-}
+}*/
 
